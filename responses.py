@@ -62,7 +62,7 @@ def ukr_responses(input_text):
         city_rain = 'Йде дощ 🌧️' if city.get_rain(city_name) else 'Дощу нема ☀️'
         city_snow = 'Йде сніг ❄️' if city.get_rain(city_name) else 'Снігу нема ☀️'
         rain_or_snow = city_rain if city_temp > 0 else city_snow
-        message = f'У місті{city_name} зараз:\n' \
+        message = f'У місті {city_name} зараз:\n' \
                   f'🕰️: {city_time}.\n' \
                   f'🌡️: {city_temp}°C.\n' \
                   f'☂️: {rain_or_snow}.\n' \
