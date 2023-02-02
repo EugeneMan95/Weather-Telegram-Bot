@@ -58,7 +58,7 @@ def ukr_responses(input_text):
         city_time = city.get_time(city_time_zone)
         city_temp = city.get_temp(city_name)
         city_humidity = city.get_humidity(city_name)
-        city_clouds = 'Небо чисте ☀️' if city.get_clouds(city_name) == 'clear sky' else 'Облачно'
+        city_clouds = 'Небо чисте ☀️' if city.get_clouds(city_name) == 'clear sky' else 'Хмарно'
         city_rain = 'Йде дощ 🌧️' if city.get_rain(city_name) else 'Дощу нема ☀️'
         city_snow = 'Йде сніг ❄️' if city.get_rain(city_name) else 'Снігу нема ☀️'
         rain_or_snow = city_rain if city_temp > 0 else city_snow
