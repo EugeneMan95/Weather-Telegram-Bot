@@ -52,7 +52,7 @@ def ukr_responses(input_text):
         return 'Неправильна назва міста, спробуй ще.'
     elif 'Moscow' in city_time_zone:
         return 'Нема гарної погоди в пеклі.\n' \
-               'Слава Україні! Слава нації! Пиздець російській федерації!'
+               'Слава Україні! Слава нації! Пиздець російській федерації!!!'
     else:
         city_name = user_message.title()
         city_time = city.get_time(city_time_zone)
